@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "DEVIL AI",
+  "short_name": "DEVIL",
+  "description": "Your intelligence beyond limits.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07100c",
+  "theme_color": "#09130e",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

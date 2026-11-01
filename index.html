@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#09130e">
+  <meta name="description" content="DEVIL AI — your intelligence beyond limits.">
+  <title>DEVIL AI</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="space-bg" aria-hidden="true">
+    <div class="nebula nebula-one"></div><div class="nebula nebula-two"></div>
+    <div class="stars"></div><div class="planet-glow"></div>
+  </div>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-row">
+        <div class="brand-mark">D</div>
+        <div><div class="brand-name">DEVIL<span> AI</span></div><div class="brand-sub">BEYOND LIMITS</div></div>
+        <button class="icon-btn close-sidebar" id="closeSidebar" aria-label="Close sidebar">×</button>
+      </div>
+      <button class="new-chat" id="newChat"><span>＋</span> New conversation</button>
+      <div class="side-label">YOUR SPACE</div>
+      <div class="history-list" id="historyList"></div>
+      <div class="sidebar-bottom">
+        <div class="status-card"><span class="status-dot"></span><div><b>DEVIL CORE</b><small>Systems operational</small></div></div>
+        <div class="side-footer">DEVIL AI <span>v1.0</span></div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open sidebar">☰</button>
+        <div class="mobile-brand">DEVIL<span> AI</span></div>
+        <div class="top-status"><span class="status-dot"></span> ONLINE</div>
+        <button class="icon-btn" id="clearBtn" title="Clear current chat" aria-label="Clear current chat">⌫</button>
+      </header>
+
+      <section class="conversation" id="conversation">
+        <div class="welcome" id="welcome">
+          <div class="core-wrap">
+            <div class="core-orbit orbit-a"></div><div class="core-orbit orbit-b"></div>
+            <div class="core-orbit orbit-c"></div>
+            <div class="core"><div class="core-inner">D</div></div>
+            <div class="core-spark spark-a"></div><div class="core-spark spark-b"></div>
+          </div>
+          <div class="eyebrow"><span></span> ARTIFICIAL INTELLIGENCE SYSTEM <span></span></div>
+          <h1>Welcome to <em>DEVIL</em></h1>
+          <p class="welcome-copy">A new intelligence is ready to explore ideas, solve problems, and create with you.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="What can you help me with?"><span>✧</span><b>Explore capabilities</b><small>Discover what DEVIL can do</small></button>
+            <button class="suggestion" data-prompt="Give me an interesting idea for a project."><span>⌘</span><b>Find an idea</b><small>Start something creative</small></button>
+            <button class="suggestion" data-prompt="Explain a difficult topic in simple words."><span>◈</span><b>Learn something</b><small>Make complex things simple</small></button>
+            <button class="suggestion" data-prompt="Help me write clean code for a website."><span>⟨/⟩</span><b>Build with code</b><small>Plan, debug, and create</small></button>
+          </div>
+        </div>
+        <div class="messages" id="messages" aria-live="polite"></div>
+      </section>
+
+      <footer class="composer-area">
+        <div class="composer">
+          <textarea id="prompt" rows="1" placeholder="Message DEVIL..." aria-label="Message DEVIL"></textarea>
+          <div class="composer-actions">
+            <div class="composer-hint">AI can make mistakes. Verify important information.</div>
+            <button class="send-btn" id="sendBtn" aria-label="Send message"><span>↑</span></button>
+          </div>
+        </div>
+        <div class="footer-note">POWERED BY <b>DEVIL CORE</b> <span>·</span> BUILT FOR EXPLORATION</div>
+      </footer>
+    </main>
+  </div>
+  <div class="mobile-scrim" id="scrim"></div>
+  <script src="/script.js" defer></script>
+</body>
+</html>
